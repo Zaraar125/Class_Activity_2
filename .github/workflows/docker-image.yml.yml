@@ -17,7 +17,7 @@ jobs:
       run: echo "${{Js?69C3a.,mD?AF}}" | docker login -u "${{minimonster32}}" --password-stdin
 
     - name: Build the Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:latest .
+      run: docker build -t ${{minimonster32}}/myapp:latest .
 
     - name: Push the Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+      run: docker push ${{minimonster32}}/myapp:latest
